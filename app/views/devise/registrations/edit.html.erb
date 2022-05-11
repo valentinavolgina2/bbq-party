@@ -4,7 +4,7 @@
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name),
                  html: { method: :put }, data: { turbo: false }) do |f| %>
-      <%= render 'devise/shared/error_messages', resource: resource %>
+      <%= render partial: 'partials/form_errors', locals: {errors: resource.errors} %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div class="mb-3">Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
