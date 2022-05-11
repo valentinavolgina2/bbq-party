@@ -1,17 +1,17 @@
 <%= form_for @user, html: {multipart: true}, data: { turbo: false } do |f| %>
   <%= render partial: 'partials/form_errors', locals: {model: @user} %>
 
-  <div class="form-group">
-    <%= f.label :name %>
+  <div class="field mb-3">
+    <%= f.label :name, class: 'fw-bold' %>
     <%= f.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="form-group">
-    <%= f.label :email %>
+  <div class="field mb-3">
+    <%= f.label :email, class: 'fw-bold' %>
     <%= f.text_field :email, class: 'form-control' %>
   </div>
 
-  <div class="actions">
+  <div class="actions mb-2">
     <%= f.submit 'Save', class: 'btn btn-primary' %>
     или <%= link_to 'back', :back %>
   </div>
