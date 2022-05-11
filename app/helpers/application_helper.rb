@@ -3,7 +3,7 @@ module ApplicationHelper
     {
       success: 'alert-success',
       error: 'alert-danger',
-      alert: 'alert-warning',
+      alert: 'alert-danger',
       notice: 'alert-success'
     }.stringify_keys[flash_type.to_s] || flash_type.to_s
   end
