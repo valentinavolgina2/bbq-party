@@ -15,6 +15,7 @@ ru:
       password_forgot: 'Забыли пороль?'
       event: 'Страница события'
       events: 'Все события'
+      confirmation_instructions: 'Не получили инструкции по подтверждению аккаунта?'
     errors:
       form_has: 'В вашей форме'
       error:
@@ -57,6 +58,17 @@ ru:
         edit:
           title: 'Изменение пароля'
           limit: 'символов минимум'
+        forgot:
+          title: 'Забыли свой пароль?'
+          action: 'Послать мне инструкции по восстановлению пароля'
+    mailer:
+      password_change:
+        greeting: 'Привет'
+        message: 'Мы хотим дать вам знать, что ваш пароль был изменен'
+      confirmation:
+        greeting: 'Добро пожаловать'
+        message: 'Вы можете подтвердить свой email, кликнув по ссылке ниже:'
+        action: 'Подтвердить мой аккаунт'
 
 
   controllers:

@@ -46,6 +46,7 @@ en:
       password_forgot: 'Forgot your password?'
       event: 'Event page'
       events: 'All events'
+      confirmation_instructions: "Didn't receive confirmation instructions?"
     errors:
       form_has: 'Form has'
       error:
@@ -87,6 +88,17 @@ en:
         edit:
           title: 'Change your password'
           limit: 'characters minimum'
+        forgot:
+          title: 'Forgot your password?'
+          action: 'Send me reset password instructions'
+    mailer:
+      password_change:
+        greeting: 'Hello'
+        message: "We're contacting you to notify you that your password has been changed."
+      confirmation:
+        greeting: 'Welcome'
+        message: 'You can confirm your account email through the link below:'
+        action: 'Confirm my account'
 
   controllers:
     events:
