@@ -34,6 +34,11 @@ ru:
       destroy:
         action: 'Удалить'
         confirmation: 'Вы уверены, что хотите удалить событие?'
+      show:
+        subscriptions:
+          owner_title: 'Зовет:'
+          guests: 'Пойдут:'
+          join: 'Я пойду:'
     users:
       create:
         title: 'Регистрация'
@@ -72,7 +77,9 @@ ru:
     comments:
       comment:
         destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-
+    subscriptions:
+      subscription:
+        destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
 
   controllers:
     events:
