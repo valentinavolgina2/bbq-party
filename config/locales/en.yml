@@ -99,6 +99,9 @@ en:
         greeting: 'Welcome'
         message: 'You can confirm your account email through the link below:'
         action: 'Confirm my account'
+    comments:
+      comment:
+        destroy_confirm: 'Are you sure you wanna delete this comment?'
 
   controllers:
     events:
