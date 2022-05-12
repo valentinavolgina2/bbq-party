@@ -1,16 +1,21 @@
-<h2><%= t('views.users.password.forgot.title') %></h2>
+<div class="row w-100 mx-0">
+  <div class="col-md-6 offset-md-3">
+    <h2 class="mb-4"><%= t('views.users.password.forgot.title') %></h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render partial: 'partials/form_errors', locals: {errors: resource.errors} %>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name),
+                 html: { method: :post }, data: { turbo: false }) do |f| %>
+      <%= render partial: 'partials/form_errors', locals: {errors: resource.errors} %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <div class="field mb-3">
+        <%= f.label :email, class: 'fw-bold' %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+      </div>
+
+      <div class="actions mb-2">
+        <%= f.submit t('views.users.password.forgot.action'), class: 'btn btn-primary' %>
+      </div>
+    <% end %>
+
+    <%= render 'devise/shared/links' %>
   </div>
-
-  <div class="actions">
-    <%= f.submit t('views.users.password.forgot.action') %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
