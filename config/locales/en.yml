@@ -46,6 +46,12 @@ en:
       password_forgot: 'Forgot your password?'
       event: 'Event page'
       events: 'All events'
+    errors:
+      form_has: 'Form has'
+      error:
+        one: '%{count} error'
+        few: '%{count} errors'
+        many: '%{count} errors'
     events:
       list:
         title: 'Events'

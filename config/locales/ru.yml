@@ -15,6 +15,12 @@ ru:
       password_forgot: 'Забыли пороль?'
       event: 'Страница события'
       events: 'Все события'
+    errors:
+      form_has: 'В вашей форме'
+      error:
+        one: '%{count} ошибка'
+        few: '%{count} ошибки'
+        many: '%{count} ошибок'
     events:
       list:
         title: 'События'
