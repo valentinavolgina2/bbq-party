@@ -61,6 +61,9 @@ en:
       edit:
         title: 'Edit event'
         action: 'Edit'
+      destroy:
+        action: 'Delete'
+        confirmation: 'Are you sure you wanna delete the event?'
     users:
       create:
         title: 'Sing up'
@@ -78,6 +81,7 @@ en:
       cancel:
         title: 'Cancel account'
         question: 'Do not want to be here anymore?'
+        confirmation: 'Are you sure you wanna delete your profile?'
         action: 'Cancel my account'
       password:
         edit:

@@ -13,7 +13,7 @@
     <p class="d-inline"><%= t('views.users.cancel.question') %>
       <%= button_to t('views.users.cancel.action'),
                     user_registration_path,
-                    form: {data: {turbo_confirm: 'Are you sure you wanna delete your profile?'}},
+                    form: {data: {turbo_confirm: t('views.users.cancel.confirmation')}},
                     method: :delete,
                     form_class: 'd-inline',
                     class: 'd-inline border-0 bg-transparent text-danger ps-2' %>

@@ -30,6 +30,9 @@ ru:
       edit:
         title: 'Редактировать событие'
         action: 'Изменить'
+      destroy:
+        action: 'Удалить'
+        confirmation: 'Вы уверены, что хотите удалить событие?'
     users:
       create:
         title: 'Регистрация'
@@ -48,6 +51,7 @@ ru:
       cancel:
         title: 'Удаление профиля'
         question: 'Больше не хочешь быть на сайте?'
+        confirmation: 'Вы уверены, что хотите удалить свой профиль?'
         action: 'Удалить мой профиль'
       password:
         edit:
