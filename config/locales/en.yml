@@ -107,6 +107,10 @@ en:
       destroyed: 'Event was successfully deleted'
     users:
       updated: 'User was successfully updated'
+    comments:
+      created: 'Comment was successfully created.'
+      destroyed: 'Comment was successfully destroyed.'
+      error: 'An error with the comment'
 
   activerecord:
     models:
