@@ -30,4 +30,75 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app:
+    name: 'BBQ'
+
+  views:
+    buttons:
+      save: 'Save'
+      cancel: 'back'
+    links:
+      profile: 'Profile'
+      logout: 'Log out'
+      login: 'Log in'
+      register: 'Register'
+      password_reset: 'Change password'
+      password_forgot: 'Forgot your password?'
+      event: 'Event page'
+      events: 'All events'
+    events:
+      list:
+        title: 'Events'
+      new:
+        title: 'New event'
+        add: 'Create event'
+      edit:
+        title: 'Edit event'
+        action: 'Edit'
+    users:
+      create:
+        title: 'Sing up'
+        action: 'Create account'
+      login:
+        title: 'Log in'
+        action: 'Log in'
+      show:
+        hosted:
+          true: 'Hosted'
+          false: "User hasn't hosted any event yet"
+      edit:
+        title: 'Edit profile'
+        action: 'Edit profile'
+      cancel:
+        title: 'Cancel account'
+        question: 'Do not want to be here anymore?'
+        action: 'Cancel my account'
+      password:
+        edit:
+          title: 'Change your password'
+          limit: 'characters minimum'
+
+  controllers:
+    events:
+      created: 'Event was successfully created'
+      updated: 'Event was successfully updated'
+      destroyed: 'Event was successfully deleted'
+    users:
+      updated: 'User was successfully updated'
+
+  activerecord:
+    models:
+      user: 'User'
+      event: 'Event'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Name'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+      event:
+        title: 'Title'
+        address: 'Address'
+        datetime: 'Date and time'
+        description: 'Description'

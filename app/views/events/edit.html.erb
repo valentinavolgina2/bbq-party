@@ -1,6 +1,10 @@
-<h1>Edit Event</h1>
+<div class="row w-100 mx-0">
+  <div class="col-lg-6 offset-lg-3">
+    <h1 class="mb-4"><%= t('views.events.edit.title') %></h1>
 
-<%= render 'form' %>
+    <%= render 'form' %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+    <%= link_to t('views.links.event'), @event %> |
+    <%= link_to t('views.links.events'), events_path %>
+  </div>
+</div>

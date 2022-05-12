@@ -1,0 +1,75 @@
+ru:
+  app:
+    name: 'Шашлыки'
+
+  views:
+    buttons:
+      save: 'Сохранить'
+      cancel: 'вернуться'
+    links:
+      profile: 'Профиль'
+      logout: 'Выйти'
+      login: 'Войти'
+      register: 'Зарегистрироваться'
+      password_reset: 'Изменить пароль'
+      password_forgot: 'Забыли пороль?'
+      event: 'Страница события'
+      events: 'Все события'
+    events:
+      list:
+        title: 'События'
+      new:
+        title: 'Новое событие'
+        add: 'Создать событие'
+      edit:
+        title: 'Редактировать событие'
+        action: 'Изменить'
+    users:
+      create:
+        title: 'Регистрация'
+        action: 'Зарегистрироваться'
+      login:
+        title: 'Вход'
+        action: 'Войти'
+      show:
+        hosted:
+          true: 'Организовал'
+          false: 'Пользователь пока не организовал ни одного
+          события'
+      edit:
+        title: 'Редактирование профиля'
+        action: 'Редактировать профиль'
+      cancel:
+        title: 'Удаление профиля'
+        question: 'Больше не хочешь быть на сайте?'
+        action: 'Удалить мой профиль'
+      password:
+        edit:
+          title: 'Изменение пароля'
+          limit: 'символов минимум'
+
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+    users:
+      updated: 'Вы обновили свой профиль'
+
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'

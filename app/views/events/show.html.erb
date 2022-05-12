@@ -6,17 +6,17 @@
 
       <div class="event-info-inner row">
         <div class="col-md-6">
-          <div class="event-description">
+          <div class="event-description my-3">
             <h1><%= @event.title %></h1>
-            <h3><%= @event.datetime %></h3>
+            <h3><%= l @event.datetime, format: :short %></h3>
             <h3><small><%= link_to @event.address,
                                    "https://google.com/maps/place/#{@event.address}" %></small></h3>
             <p><%= @event.description %></p>
           </div>
 
           <% if current_user_can_edit?(@event) %>
-            <div class="mt-3">
-              <%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %>
+            <div class="mb-3">
+              <%= link_to  t('views.events.edit.action'), edit_event_path(@event), class: 'btn btn-primary' %>
             </div>
           <% end %>
         </div>
