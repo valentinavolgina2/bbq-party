@@ -12,15 +12,15 @@
       </div>
 
       <div class="field mb-3">
-        <%= f.label :password, class: 'fw-bold' %><br />
+        <%= f.label :password, class: 'fw-bold' %>
         <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length%> <%= t('views.users.password.edit.limit') %>)</em><br />
+          <em>(<%= @minimum_password_length%> <%= t('views.users.password.edit.limit') %>)</em><br/>
         <% end %>
         <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control' %>
       </div>
 
       <div class="field mb-3">
-        <%= f.label :password_confirmation, class: 'fw-bold' %><br />
+        <%= f.label :password_confirmation, class: 'fw-bold' %>
         <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control' %>
       </div>
 
