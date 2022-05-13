@@ -24,3 +24,7 @@
 .thumbnail-inner {
   padding: 20px 10px 10px;
 }
+
+.field_with_errors {
+  display: inline;
+}
