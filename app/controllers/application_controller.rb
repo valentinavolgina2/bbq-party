@@ -20,11 +20,4 @@ class ApplicationController < ActionController::Base
         (model.try(:event).present? && model.event.user == current_user)
     )
   end
-
-  def current_user_can_subscribe?(event, subscription = Subscription.new)
-    loggedin_event_owner = user_signed_in? && event.user == current_user
-    anonymous_event_owner = !user_signed_in? && event.user.email == subscription.user_email
-
-    !loggedin_event_owner && !anonymous_event_owner
-  end
 end
