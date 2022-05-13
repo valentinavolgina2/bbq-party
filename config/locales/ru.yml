@@ -70,10 +70,6 @@ ru:
       password_change:
         greeting: 'Привет'
         message: 'Мы хотим дать вам знать, что ваш пароль был изменен'
-      confirmation:
-        greeting: 'Добро пожаловать'
-        message: 'Вы можете подтвердить свой email, кликнув по ссылке ниже:'
-        action: 'Подтвердить мой аккаунт'
     comments:
       comment:
         destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
