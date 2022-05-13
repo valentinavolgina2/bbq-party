@@ -6,10 +6,14 @@ class SubscriptionsController < ApplicationController
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
 
-    if @new_subscription.save
-      redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
+    if current_user_can_subscribe?(@event, @new_subscription)
+      if @new_subscription.save
+        redirect_to @event, notice: I18n.t('controllers.subscriptions.created')
+      else
+        render 'events/show', alert: I18n.t('controllers.subscriptions.error')
+      end
     else
-      render 'events/show', alert: I18n.t('controllers.subscriptions.error')
+      redirect_to @event, alert: I18n.t('controllers.subscriptions.owner_not_allowed')
     end
   end
 

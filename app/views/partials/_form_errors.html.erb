@@ -1,6 +1,6 @@
 <% if errors.any? %>
   <div id="error_explanation">
-    <div class="lead mb-3">
+    <div class="lead mb-3 text-danger">
       <%= t('views.errors.form_has') %> <%= I18n.t('views.errors.error', count: errors.count) %>
     </div>
     <% errors.full_messages.each do |message| %>

@@ -128,6 +128,7 @@ en:
       created: 'You have subscribed on this event'
       destroyed: 'You have unsubscribed successfully'
       error: 'Error during subscribing/unsubscribing'
+      owner_not_allowed: 'You can not subscribe on your event'
 
   activerecord:
     models:
