@@ -124,8 +124,6 @@ en:
       created: 'You have subscribed on this event'
       destroyed: 'You have unsubscribed successfully'
       error: 'Error during subscribing/unsubscribing'
-      owner_not_allowed: 'You can not subscribe on your event'
-      email_is_taken: 'is already taken. If you wanna use it, log in first.'
 
   activerecord:
     models:
@@ -143,3 +141,16 @@ en:
         address: 'Address'
         datetime: 'Date and time'
         description: 'Description'
+      subscription:
+        user_email: 'Email'
+
+    errors:
+      models:
+        subscription:
+          attributes:
+            user:
+              taken: 'is already on subscription list'
+            user_email:
+              owner_not_allowed: 'You can not subscribe on your event'
+              email_is_taken: 'is already taken. If you wanna use it, log in first.'
+              taken: 'is already on subscription list'
