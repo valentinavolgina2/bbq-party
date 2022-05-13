@@ -37,19 +37,22 @@
   <div class="row">
     <div class="col-md-8">
       <div class="event-comments mt-3">
+        <%= render partial: 'comments/form',
+                   locals: {comment: @new_comment || @event.comments.build} %>
+
         <div class="my-3">
           <%= render partial: 'comments/comment',
-                     collection: @event.comments %>
+                     collection: @event.comments.except(@new_comment) %>
         </div>
       </div>
     </div>
 
     <div class="col-md-4">
-      <div class="event-owner">
+      <div class="event-owner mb-4">
         <h4><%= t('views.events.show.subscriptions.owner_title') %></h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
-      <div class="event-subscriptions">
+      <div class="event-subscriptions mb-4">
         <h4><%= t('views.events.show.subscriptions.guests') %></h4>
         <div>
           <p class="d-inline">

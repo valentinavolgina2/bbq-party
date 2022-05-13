@@ -77,9 +77,11 @@ ru:
     comments:
       comment:
         destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+        submit_text: 'Отправить'
     subscriptions:
       subscription:
         destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+        submit_text: 'Подписаться'
 
   controllers:
     events:

@@ -107,9 +107,11 @@ en:
     comments:
       comment:
         destroy_confirm: 'Are you sure you wanna delete this comment?'
+        submit_text: 'Send'
     subscriptions:
       subscription:
         destroy_confirm: 'Are tou sure you wanna unsubscribe?'
+        submit_text: 'Subscribe'
 
   controllers:
     events:
