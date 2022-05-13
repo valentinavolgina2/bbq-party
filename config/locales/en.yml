@@ -129,6 +129,7 @@ en:
       destroyed: 'You have unsubscribed successfully'
       error: 'Error during subscribing/unsubscribing'
       owner_not_allowed: 'You can not subscribe on your event'
+      email_is_taken: 'is already taken. If you wanna use it, log in first.'
 
   activerecord:
     models:
