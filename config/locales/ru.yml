@@ -78,6 +78,10 @@ ru:
       subscription:
         destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
         submit_text: 'Подписаться'
+    photos:
+      photo:
+        upload: 'Загрузить'
+        added: 'Добавил'
 
   controllers:
     events:
@@ -94,11 +98,16 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фоткой'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотку'
 
   activerecord:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      photo: 'Фотография'
 
     attributes:
       user:
@@ -114,6 +123,9 @@ ru:
         description: 'Описание'
       subscription:
         user_email: 'Email'
+      attributes:
+        photo:
+          photo: 'Фотография'
 
     errors:
       models:

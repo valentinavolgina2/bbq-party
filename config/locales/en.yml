@@ -108,6 +108,10 @@ en:
       subscription:
         destroy_confirm: 'Are tou sure you wanna unsubscribe?'
         submit_text: 'Subscribe'
+    photos:
+      photo:
+        upload: 'Upload'
+        added: 'Added by'
 
   controllers:
     events:
@@ -124,11 +128,16 @@ en:
       created: 'You have subscribed on this event'
       destroyed: 'You have unsubscribed successfully'
       error: 'Error during subscribing/unsubscribing'
+    photos:
+      error: 'Something is wrong with the photo'
+      created: 'You have uploaded a photo to the event'
+      destroyed: 'You deleted the photo'
 
   activerecord:
     models:
       user: 'User'
       event: 'Event'
+      photo: 'Photo'
 
     attributes:
       user:
@@ -144,6 +153,9 @@ en:
         description: 'Description'
       subscription:
         user_email: 'Email'
+      attributes:
+        photo:
+          photo: 'Photo'
 
     errors:
       models:

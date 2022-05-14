@@ -1,0 +1,5 @@
+<div class="event-photo my-3">
+  <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url %>
+
+  <%= t('views.photos.photo.added') %> <%= render partial: 'users/user', object: photo.user %>
+</div>
