@@ -82,6 +82,7 @@ ru:
       photo:
         upload: 'Загрузить'
         added: 'Добавил'
+        destroy_confirm: 'Вы уверены, что хотите удалить эту фотографию?'
 
   controllers:
     events:
