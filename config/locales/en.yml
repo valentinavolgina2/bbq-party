@@ -134,6 +134,7 @@ en:
       user:
         email: 'Email'
         name: 'Name'
+        avatar: 'Avatar'
         password: 'Password'
         password_confirmation: 'Password confirmation'
       event:
@@ -154,3 +155,7 @@ en:
               owner_not_allowed: 'You can not subscribe on your event'
               email_is_taken: 'is already taken. If you wanna use it, log in first.'
               taken: 'is already on subscription list'
+
+  errors:
+    messages:
+      extension_whitelist_error: 'supports only jpg, jpeg, gif, png files'

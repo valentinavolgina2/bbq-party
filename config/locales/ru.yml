@@ -104,6 +104,7 @@ ru:
       user:
         email: 'Email'
         name: 'Имя'
+        avatar: 'Аватарка'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -124,3 +125,7 @@ ru:
               owner_not_allowed: 'Вы не можете подписаться на свое событие'
               email_is_taken: 'уже зарегестрирован. Войдите, чтобы использовать этот email для подписки.'
               taken: 'уже в списке подписавшихся'
+
+  errors:
+    messages:
+      extension_whitelist_error: 'поддерживает только jpg, jpeg, gif, png форматы'
