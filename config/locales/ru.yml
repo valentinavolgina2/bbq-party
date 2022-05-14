@@ -122,6 +122,7 @@ ru:
         datetime: 'Дата и время'
         description: 'Описание'
       subscription:
+        user_name: 'Имя пользователя'
         user_email: 'Email'
       photo:
         photo: 'Фотография'

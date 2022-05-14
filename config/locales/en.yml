@@ -152,6 +152,7 @@ en:
         datetime: 'Date and time'
         description: 'Description'
       subscription:
+        user_name: 'User name'
         user_email: 'Email'
       photo:
         photo: 'Photo'
