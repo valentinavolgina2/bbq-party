@@ -127,6 +127,7 @@ ru:
         user_email: 'Email'
       comment:
         body: 'Комментарий'
+        user_name: 'Имя пользователя'
       photo:
         photo: 'Фотография'
 

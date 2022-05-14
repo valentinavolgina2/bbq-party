@@ -157,6 +157,7 @@ en:
         user_email: 'Email'
       comment:
         body: 'Comment'
+        user_name: 'User name'
       photo:
         photo: 'Photo'
 
