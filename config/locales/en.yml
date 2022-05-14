@@ -153,9 +153,8 @@ en:
         description: 'Description'
       subscription:
         user_email: 'Email'
-      attributes:
-        photo:
-          photo: 'Photo'
+      photo:
+        photo: 'Photo'
 
     errors:
       models:

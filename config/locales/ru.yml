@@ -123,9 +123,8 @@ ru:
         description: 'Описание'
       subscription:
         user_email: 'Email'
-      attributes:
-        photo:
-          photo: 'Фотография'
+      photo:
+        photo: 'Фотография'
 
     errors:
       models:
