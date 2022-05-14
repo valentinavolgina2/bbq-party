@@ -125,6 +125,8 @@ ru:
       subscription:
         user_name: 'Имя пользователя'
         user_email: 'Email'
+      comment:
+        body: 'Комментарий'
       photo:
         photo: 'Фотография'
 
