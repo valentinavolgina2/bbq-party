@@ -83,6 +83,20 @@ ru:
         upload: 'Загрузить'
         added: 'Добавил'
         destroy_confirm: 'Вы уверены, что хотите удалить эту фотографию?'
+    event_mailer:
+      subscription:
+        title: 'Новая подписка'
+        name: 'Имя:'
+        email: 'Email:'
+        event: 'Событие:'
+        when: 'Состоится:'
+        host: 'Организатор:'
+      comment:
+        title: 'Новый комментарий'
+        author: 'Автор:'
+        event: 'Событие:'
+        when: 'Состоится:'
+        host: 'Организатор:'
 
   controllers:
     events:
@@ -141,6 +155,13 @@ ru:
               owner_not_allowed: 'Вы не можете подписаться на свое событие'
               email_is_taken: 'уже зарегестрирован. Войдите, чтобы использовать этот email для подписки.'
               taken: 'уже в списке подписавшихся'
+
+  mailers:
+    event:
+      subscription:
+        subject: 'Новая подписка на'
+      comment:
+        subject: 'Новый комментарий @'
 
   errors:
     messages:

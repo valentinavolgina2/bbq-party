@@ -1,0 +1,14 @@
+<h1><%= t('views.event_mailer.comment.title') %></h1>
+<p><%= @comment.body %></p>
+<p><%= t('views.event_mailer.comment.author') %>: <strong><%= @comment.user_name %></strong></p>
+
+<hr/>
+
+<%= t('views.event_mailer.comment.event') %>
+<h3><%= @event.title %></h3>
+
+<%= t('views.event_mailer.comment.when') %>
+<h4><%= l @event.datetime %></h4>
+
+<%= t('views.event_mailer.comment.host') %>
+<h4><%= @event.user.name %></h4>

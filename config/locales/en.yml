@@ -113,6 +113,20 @@ en:
         upload: 'Upload'
         added: 'Added by'
         destroy_confirm: 'Are you sure you wanna delete this photo?'
+    event_mailer:
+      subscription:
+        title: 'New subscription'
+        name: 'Name:'
+        email: 'Email:'
+        event: 'Event:'
+        when: 'When:'
+        host: 'Host by:'
+      comment:
+        title: 'Новый комментарий'
+        author: 'Автор:'
+        event: 'Событие:'
+        when: 'Состоится:'
+        host: 'Организатор:'
 
   controllers:
     events:
@@ -160,6 +174,13 @@ en:
         user_name: 'User name'
       photo:
         photo: 'Photo'
+
+    mailers:
+      event:
+        subscription:
+          subject: 'New subscription on'
+        comment:
+          subject: 'New comment @'
 
     errors:
       models:
