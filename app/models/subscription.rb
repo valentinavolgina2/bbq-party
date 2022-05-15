@@ -4,6 +4,7 @@ class Subscription < ApplicationRecord
 
   with_options if: -> {user.present?} do
     validates :user, uniqueness: {scope: :event_id}
+    validate :cannot_subscribe_on_my_event
   end
 
   with_options unless: -> {user.present?} do
@@ -13,28 +14,18 @@ class Subscription < ApplicationRecord
     validate :cannot_use_other_user_email
   end
 
-  validate :cannot_subscribe_on_my_event
-
   def user_name
-    if user.present?
-      user.name
-    else
-      super
-    end
+    user&.name || super
   end
 
   def user_email
-    if user.present?
-      user.email
-    else
-      super
-    end
+    user&.email || super
   end
 
   private
 
   def cannot_subscribe_on_my_event
-    if event.user.email == user_email
+    if event.user == user
       errors.add(:user_email, :owner_not_allowed)
     end
   end
