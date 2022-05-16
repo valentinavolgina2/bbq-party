@@ -119,20 +119,22 @@ en:
         name: 'Name:'
         email: 'Email:'
         event: 'Event:'
-        when: 'When:'
+        when: 'Date of the event:'
         host: 'Host by:'
         link: 'Link to event:'
       comment:
         title: 'New comment'
         author: 'Author:'
         event: 'Event:'
-        when: 'When:'
+        when: 'Date of the event:'
+        host: 'Host by:'
         link: 'Link to event:'
       photo:
         title: 'New photo'
         author: 'Author:'
         event: 'Event:'
-        when: 'Состоится:'
+        when: 'Date of the event:'
+        host: 'Host by:'
         link: 'Link to event:'
 
   controllers:
