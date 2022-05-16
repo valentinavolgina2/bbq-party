@@ -1,39 +1,39 @@
 ru:
   app:
-    name: 'Шашлыки'
+    name: Шашлыки
 
   views:
     buttons:
-      save: 'Сохранить'
-      cancel: 'вернуться'
+      save: Сохранить
+      cancel: вернуться
     links:
-      profile: 'Профиль'
-      logout: 'Выйти'
-      login: 'Войти'
-      register: 'Зарегистрироваться'
-      password_reset: 'Изменить пароль'
-      password_forgot: 'Забыли пороль?'
-      event: 'Страница события'
-      events: 'Все события'
-      confirmation_instructions: 'Не получили инструкции по подтверждению аккаунта?'
+      profile: Профиль
+      logout: Выйти
+      login: Войти
+      register: Зарегистрироваться
+      password_reset: Изменить пароль
+      password_forgot: Забыли пороль?
+      event: Страница события
+      events: Все события
+      confirmation_instructions: Не получили инструкции по подтверждению аккаунта?
     errors:
-      form_has: 'В вашей форме'
+      form_has: В вашей форме
       error:
         one: '%{count} ошибка'
         few: '%{count} ошибки'
         many: '%{count} ошибок'
     events:
       list:
-        title: 'События'
+        title: События
       new:
-        title: 'Новое событие'
-        add: 'Создать событие'
+        title: Новое событие
+        add: Создать событие
       edit:
-        title: 'Редактировать событие'
-        action: 'Изменить'
+        title: Редактировать событие
+        action: Изменить
       destroy:
-        action: 'Удалить'
-        confirmation: 'Вы уверены, что хотите удалить событие?'
+        action: Удалить
+        confirmation: Вы уверены, что хотите удалить событие?
       show:
         subscriptions:
           owner_title: 'Зовет:'
@@ -41,51 +41,50 @@ ru:
           join: 'Я пойду:'
     users:
       create:
-        title: 'Регистрация'
-        action: 'Зарегистрироваться'
+        title: Регистрация
+        action: Зарегистрироваться
       login:
-        title: 'Вход'
-        action: 'Войти'
+        title: Вход
+        action: Войти
       show:
         hosted:
-          true: 'Организовал'
-          false: 'Пользователь пока не организовал ни одного
-          события'
+          true: Организовал
+          false: Пользователь пока не организовал ни одного события
       edit:
-        title: 'Редактирование профиля'
-        action: 'Редактировать профиль'
+        title: Редактирование профиля
+        action: Редактировать профиль
       cancel:
-        title: 'Удаление профиля'
-        question: 'Больше не хочешь быть на сайте?'
-        confirmation: 'Вы уверены, что хотите удалить свой профиль?'
-        action: 'Удалить мой профиль'
+        title: Удаление профиля
+        question: Больше не хочешь быть на сайте?
+        confirmation: Вы уверены, что хотите удалить свой профиль?
+        action: Удалить мой профиль
       password:
         edit:
-          title: 'Изменение пароля'
-          limit: 'символов минимум'
+          title: Изменение пароля
+          limit: символов минимум
         forgot:
-          title: 'Забыли свой пароль?'
-          action: 'Послать мне инструкции по восстановлению пароля'
+          title: Забыли свой пароль?
+          action: Послать мне инструкции по восстановлению пароля
     mailer:
       password_change:
-        greeting: 'Привет'
-        message: 'Мы хотим дать вам знать, что ваш пароль был изменен'
+        greeting: Привет
+        message: Мы хотим дать вам знать, что ваш пароль был изменен
     comments:
       comment:
-        destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-        submit_text: 'Отправить'
+        destroy_confirm: Вы уверены, что хотите удалить этот комментарий?
+        submit_text: Отправить
     subscriptions:
       subscription:
-        destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-        submit_text: 'Подписаться'
+        destroy_confirm: Вы уверены, что хотите удалить эту подписку?
+        submit_text: Подписаться
     photos:
       photo:
-        upload: 'Загрузить'
-        added: 'Добавил'
-        destroy_confirm: 'Вы уверены, что хотите удалить эту фотографию?'
+        upload: Загрузить
+        added: Добавил
+        destroy_confirm: Вы уверены, что хотите удалить эту фотографию?
     event_mailer:
       subscription:
-        title: 'Новая подписка'
+        title: Новая подписка
         name: 'Имя:'
         email: 'Email:'
         event: 'Событие:'
@@ -93,14 +92,14 @@ ru:
         host: 'Организатор:'
         link: 'Ссылка на событие:'
       comment:
-        title: 'Новый комментарий'
+        title: Новый комментарий
         author: 'Автор:'
         event: 'Событие:'
         when: 'Дата проведения:'
         host: 'Организатор:'
         link: 'Ссылка на событие:'
       photo:
-        title: 'Новая фотография'
+        title: Новая фотография
         author: 'Автор:'
         event: 'Событие:'
         when: 'Дата проведения:'
@@ -109,61 +108,61 @@ ru:
 
   controllers:
     events:
-      created: 'Вы создали новое мероприятие'
-      updated: 'Вы обновили мероприятие'
-      destroyed: 'Вы удалили мероприятие :('
+      created: Вы создали новое мероприятие
+      updated: Вы обновили мероприятие
+      destroyed: Вы удалили мероприятие
     users:
-      updated: 'Вы обновили свой профиль'
+      updated: Вы обновили свой профиль
     comments:
-      created: 'Ваш комментарий добавлен'
-      destroyed: 'Комментарий удален'
-      error: 'Ошибка с комментарием'
+      created: Ваш комментарий добавлен
+      destroyed: Комментарий удален
+      error: Ошибка с комментарием
     subscriptions:
-      created: 'Вы подписаны на это событие'
-      destroyed: 'Участник отписан'
-      error: 'Подписка/отписка не сработала'
+      created: Вы подписаны на это событие
+      destroyed: Участник отписан
+      error: Подписка/отписка не сработала
     photos:
-      error: 'Что-то не так с фоткой'
-      created: 'Вы добавили фотографию к событию'
-      destroyed: 'Вы удалили фотку'
+      error: Что-то не так с фоткой
+      created: Вы добавили фотографию к событию
+      destroyed: Вы удалили фотку
 
   activerecord:
     models:
-      user: 'Пользователь'
-      event: 'Событие'
-      photo: 'Фотография'
+      user: Пользователь
+      event: Событие
+      photo: Фотография
 
     attributes:
       user:
-        email: 'Email'
-        name: 'Имя'
-        avatar: 'Аватарка'
-        password: 'Пароль'
-        password_confirmation: 'Подтверждение пароля'
+        email: Email
+        name: Имя
+        avatar: Аватарка
+        password: Пароль
+        password_confirmation: Подтверждение пароля
       event:
-        title: 'Название'
-        address: 'Место проведения'
-        datetime: 'Дата и время'
-        description: 'Описание'
+        title: Название
+        address: Место проведения
+        datetime: Дата и время
+        description: Описание
       subscription:
-        user_name: 'Имя пользователя'
-        user_email: 'Email'
+        user_name: Имя пользователя
+        user_email: Email
       comment:
-        body: 'Комментарий'
-        user_name: 'Имя пользователя'
+        body: Комментарий
+        user_name: Имя пользователя
       photo:
-        photo: 'Фотография'
+        photo: Фотография
 
     errors:
       models:
         subscription:
           attributes:
             user:
-              taken: 'уже в списке подписавшихся'
+              taken: уже в списке подписавшихся
             user_email:
-              owner_not_allowed: 'Вы не можете подписаться на свое событие'
-              email_is_taken: 'уже зарегестрирован. Войдите, чтобы использовать этот email для подписки.'
-              taken: 'уже в списке подписавшихся'
+              owner_not_allowed: Вы не можете подписаться на свое событие
+              email_is_taken: уже зарегестрирован. Войдите, чтобы использовать этот email для подписки.
+              taken: уже в списке подписавшихся
 
   event_mailer:
     subscription:
@@ -175,4 +174,4 @@ ru:
 
   errors:
     messages:
-      extension_whitelist_error: 'поддерживает только jpg, jpeg, gif, png форматы'
+      extension_whitelist_error: поддерживает только jpg, jpeg, gif, png форматы
