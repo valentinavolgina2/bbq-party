@@ -7,5 +7,5 @@
 
 --------------------------------
 <%= t('views.event_mailer.comment.event') %>: <%= @event.title %>
-<%= t('views.event_mailer.comment.when') %>: <%= l @event.datetime %>
+<%= t('views.event_mailer.comment.when') %>: <%= l @event.datetime, format: :short %>
 <%= t('views.event_mailer.comment.host') %>: <%= @event.user.name %>
