@@ -5,7 +5,9 @@
 
 <%= t('views.event_mailer.subscription.event') %>
 
-<h3><%= @event.title %></h3>
+<h3>
+  <%=sanitize link_to(@event.title, event_url(@event)), tags: %w(a), attributes: %w(href)%>
+</h3>
 
 <%= t('views.event_mailer.subscription.when') %>
 <h4><%= l @event.datetime, format: :short %></h4>

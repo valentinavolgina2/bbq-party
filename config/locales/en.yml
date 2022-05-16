@@ -121,18 +121,19 @@ en:
         event: 'Event:'
         when: 'When:'
         host: 'Host by:'
+        link: 'Link to event:'
       comment:
         title: 'New comment'
         author: 'Author:'
         event: 'Event:'
         when: 'When:'
-        host: 'Hosted by:'
+        link: 'Link to event:'
       photo:
         title: 'New photo'
         author: 'Author:'
         event: 'Event:'
         when: 'Состоится:'
-        host: 'Hosted by:'
+        link: 'Link to event:'
 
   controllers:
     events:

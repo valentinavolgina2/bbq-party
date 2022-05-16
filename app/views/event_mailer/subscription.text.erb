@@ -1,5 +1,5 @@
 <%= t('views.event_mailer.subscription.title') %>
-----
+----------------------
 
 <%= t('views.event_mailer.subscription.name') %> <%= @name %>
 <%= t('views.event_mailer.subscription.email') %> <%=  @email %>
@@ -9,3 +9,7 @@
 <%= t('views.event_mailer.subscription.event') %> <%= @event.title %>
 <%= t('views.event_mailer.subscription.when') %> <%= l @event.datetime, format: :short %>
 <%= t('views.event_mailer.subscription.host') %> <%= @event.user.name %>
+
+----------------------
+
+<%= t('views.event_mailer.subscription.link') %> <%= event_url(@event)%>

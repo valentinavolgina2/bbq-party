@@ -1,11 +1,16 @@
 <%= t('views.event_mailer.comment.title') %>
-----
+----------------------
 
 <%= @comment.body %>
 
 <%= t('views.event_mailer.comment.author') %>: <%= @comment.user_name %>
 
 --------------------------------
+
 <%= t('views.event_mailer.comment.event') %>: <%= @event.title %>
 <%= t('views.event_mailer.comment.when') %>: <%= l @event.datetime, format: :short %>
 <%= t('views.event_mailer.comment.host') %>: <%= @event.user.name %>
+
+----------------------
+
+<%= t('views.event_mailer.comment.link') %> <%= event_url(@event)%>
