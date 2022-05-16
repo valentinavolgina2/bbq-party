@@ -181,14 +181,13 @@ en:
       photo:
         photo: 'Photo'
 
-    mailers:
-      event:
-        subscription:
-          subject: 'New subscription on'
-        comment:
-          subject: 'New comment @'
-        photo:
-          subject: 'New photo @'
+    event_mailer:
+      subscription:
+        subject: 'New subscription on %{event}'
+      comment:
+        subject: 'New comment @%{event}'
+      photo:
+        subject: 'New photo @%{event}'
 
     errors:
       models:

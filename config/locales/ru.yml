@@ -162,14 +162,13 @@ ru:
               email_is_taken: 'уже зарегестрирован. Войдите, чтобы использовать этот email для подписки.'
               taken: 'уже в списке подписавшихся'
 
-  mailers:
-    event:
-      subscription:
-        subject: 'Новая подписка на'
-      comment:
-        subject: 'Новый комментарий @'
-      photo:
-        subject: 'Новая фотография @'
+  event_mailer:
+    subscription:
+      subject: 'Новая подписка на %{event}'
+    comment:
+      subject: 'Новый комментарий @%{event}'
+    photo:
+      subject: 'Новая фотография @%{event}'
 
   errors:
     messages:
