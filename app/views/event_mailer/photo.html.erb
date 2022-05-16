@@ -1,0 +1,14 @@
+<h1><%= t('views.event_mailer.photo.title') %></h1>
+<%= image_tag(@photo.photo.thumb.url) %>
+<p><%= t('views.event_mailer.photo.author') %>: <strong><%= @photo.user.name %></strong></p>
+
+<hr/>
+
+<%= t('views.event_mailer.photo.event') %>
+<h3><%= @event.title %></h3>
+
+<%= t('views.event_mailer.photo.when') %>
+<h4><%= l @event.datetime, format: :short %></h4>
+
+<%= t('views.event_mailer.photo.host') %>
+<h4><%= @event.user.name %></h4>

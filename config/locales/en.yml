@@ -122,11 +122,17 @@ en:
         when: 'When:'
         host: 'Host by:'
       comment:
-        title: 'Новый комментарий'
-        author: 'Автор:'
-        event: 'Событие:'
+        title: 'New comment'
+        author: 'Author:'
+        event: 'Event:'
+        when: 'When:'
+        host: 'Hosted by:'
+      photo:
+        title: 'New photo'
+        author: 'Author:'
+        event: 'Event:'
         when: 'Состоится:'
-        host: 'Организатор:'
+        host: 'Hosted by:'
 
   controllers:
     events:
@@ -181,6 +187,8 @@ en:
           subject: 'New subscription on'
         comment:
           subject: 'New comment @'
+        photo:
+          subject: 'New photo @'
 
     errors:
       models:
