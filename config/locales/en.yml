@@ -93,6 +93,9 @@ en:
         edit:
           title: Change your password
           limit: characters minimum
+          new_passowrd: New password
+          confirm_new_password: Confirm new password
+          action: Change password
         forgot:
           title: Forgot your password?
           action: Send me reset password instructions

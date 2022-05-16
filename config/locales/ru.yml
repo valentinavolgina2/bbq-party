@@ -62,9 +62,13 @@ ru:
         edit:
           title: Изменение пароля
           limit: символов минимум
+          new_passowrd: Новый пароль
+          confirm_new_password: Подтверждение пароля
+          action: Изменить пароль
         forgot:
           title: Забыли свой пароль?
           action: Послать мне инструкции по восстановлению пароля
+
     mailer:
       password_change:
         greeting: Привет
