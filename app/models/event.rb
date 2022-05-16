@@ -12,6 +12,6 @@ class Event < ApplicationRecord
   validates :user, presence: true
 
   def visitors
-    (subscribers + [user]).uniq
+    (subscriptions.map{|s| s.user || s.user_name} + [user]).uniq
   end
 end

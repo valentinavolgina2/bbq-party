@@ -27,10 +27,18 @@ module ApplicationHelper
   end
 
   def user_avatar_thumb(user)
-    if user.avatar.file.present?
+    if user.is_a?(User) && user.avatar.file.present?
       user.avatar.thumb.url
     else
       asset_path('user.png')
+    end
+  end
+
+  def subscriber_name(subscriber)
+    if subscriber.is_a?(User)
+      subscriber.name
+    else
+      subscriber
     end
   end
 

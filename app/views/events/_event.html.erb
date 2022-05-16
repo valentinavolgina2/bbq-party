@@ -20,7 +20,7 @@
 
         <div class="mt-3">
           <% event.visitors.each do |user| %>
-            <%= image_tag user_avatar_thumb(user), class: 'img-icon', title: user.name %>
+            <%= image_tag user_avatar_thumb(user), class: 'img-icon', title: subscriber_name(user) %>
           <% end %>
         </div>
       </div>
