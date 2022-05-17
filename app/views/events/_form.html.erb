@@ -21,6 +21,11 @@
     <%= f.text_area :description, class: 'form-control' %>
   </div>
 
+  <div class="field mb-3">
+    <%= f.label :pincode, class: 'fw-bold' %>
+    <%= f.text_field :pincode, class: 'form-control' %>
+  </div>
+
   <div class="actions mb-2">
     <%= f.submit t('views.buttons.save'), class: 'btn btn-primary' %>
     или <%= link_to t('views.buttons.cancel'), :back %>
