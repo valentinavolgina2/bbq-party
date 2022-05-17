@@ -34,6 +34,8 @@ en:
     name: BBQ
 
   views:
+    general:
+      or: or
     buttons:
       save: Save
       cancel: back

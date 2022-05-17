@@ -3,6 +3,8 @@ ru:
     name: Шашлыки
 
   views:
+    general:
+      or: или
     buttons:
       save: Сохранить
       cancel: вернуться
