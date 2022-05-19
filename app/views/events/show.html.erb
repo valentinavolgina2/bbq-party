@@ -68,20 +68,23 @@
       </div>
     </div>
 
+    <% event_guests = @event.subscriptions.except(@new_subscription) %>
     <div class="col-md-4">
       <div class="event-owner mb-4">
         <h4><%= t('views.events.show.subscriptions.owner_title') %></h4>
         <p><%= render partial: 'users/user', object: @event.user %></p>
       </div>
+      <% if event_guests.any? %>
       <div class="event-subscriptions mb-5">
         <h4><%= t('views.events.show.subscriptions.guests') %></h4>
         <div>
           <p class="d-inline">
             <%= render partial: 'subscriptions/subscription',
-                       collection: @event.subscriptions.except(@new_subscription) %>
+                       collection: event_guests %>
           </p>
         </div>
       </div>
+      <% end %>
       <% if !event_owner?(@event) %>
         <div class="event-subscription-form">
           <h4><%= t('views.events.show.subscriptions.join') %></h4>
