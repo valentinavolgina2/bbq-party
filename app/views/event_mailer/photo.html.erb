@@ -6,7 +6,7 @@
 
 <%= t('views.event_mailer.photo.event') %>
 <h3>
-  <%=sanitize link_to(@event.title, event_url(@event)), tags: %w(a), attributes: %w(href)%>
+  <%= link_to(@event.title, event_url(@event)) %>
 </h3>
 
 <%= t('views.event_mailer.photo.when') %>

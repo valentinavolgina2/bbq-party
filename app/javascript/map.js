@@ -31,7 +31,7 @@ document.addEventListener("turbo:load", function() {
                     center: coordinates,
                     zoom: 14
                 })
-                
+
                 map.addControl(new mapboxgl.FullscreenControl());
                 map.addControl(new MapboxLanguage({  defaultLanguage: 'ru'}));
 
