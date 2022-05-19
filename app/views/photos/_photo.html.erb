@@ -1,12 +1,15 @@
 <div class="event-photo my-3">
-  <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url %>
+  <% image_title = "#{t('views.photos.photo.added')} #{render partial: 'users/user', object: photo.user}" %>
+  <%= link_to image_tag(photo.photo.thumb.url), photo.photo.url,
+              data: { toggle: 'lightbox', gallery: 'event-photos' } %>
+  <%#= link_to image_tag(photo.photo.thumb.url), photo.photo.url %>
 
   <%= t('views.photos.photo.added') %> <%= render partial: 'users/user', object: photo.user %>
 
   <% if current_user_can_edit?(photo) %>
     <%= button_to fa_icon('trash'),
                   event_photo_path(photo.event, photo),
-                  form: {data: {turbo_confirm: t('views.photos.photo.destroy_confirm')}},
+                  form: { data: { turbo_confirm: t('views.photos.photo.destroy_confirm') } },
                   method: :delete,
                   class: 'bg-transparent border-0',
                   form_class: 'd-inline'%>

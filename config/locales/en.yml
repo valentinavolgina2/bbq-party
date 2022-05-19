@@ -144,6 +144,10 @@ en:
         when: 'Date of the event:'
         host: 'Host by:'
         link: 'Link to event:'
+    map:
+      no_support: You do not see the map because your browser does not support Mapbox GL. Please use another browser.
+      invalid_address: Can not detect the location
+      geocode_error: Unable to connect to Geocode API
 
   controllers:
     events:

@@ -11,8 +11,7 @@
           <div class="event-description my-3">
             <h1><%= @event.title %></h1>
             <h3><%= l @event.datetime, format: :short %></h3>
-            <h3><small><%= link_to @event.address,
-                                   "https://google.com/maps/place/#{@event.address}" %></small></h3>
+            <h3><small><%= @event.address %></small></h3>
             <p><%= @event.description %></p>
           </div>
 
@@ -32,6 +31,16 @@
             </div>
           <% end %>
         </div>
+        <div class="col-md-6">
+          <div id="map" class="my-3 bg-white"
+               data-mapbox-api-key="<%= ENV['MAPBOX_TOKEN'] %>"
+               data-mapbox-address="<%= @event.address %>" style="width: 100%; height: 400px;">
+            <p class="text-danger d-none no-support px-2 py-3"><%= t('views.map.no_support') %></p>
+            <p class="text-danger d-none geocode-error px-2 py-3"><%= t('views.map.geocode_error') %></p>
+            <p class="text-danger d-none invalid-address px-2 py-3"><%= t('views.map.invalid_address') %></p>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +48,17 @@
   <div class="row">
     <div class="col-md-8">
       <div class="event-photos">
+        <div class="row">
+          <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-title="A random title" data-type="image" class="col-sm-4">
+            <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+          </a>
+          <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" data-type="image" class="col-sm-4">
+            <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+          </a>
+          <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" data-type="image" class="col-sm-4">
+            <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+          </a>
+        </div>
         <div class="event-photos-gallery">
           <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
         </div>
