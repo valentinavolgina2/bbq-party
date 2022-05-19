@@ -1,4 +1,0 @@
-<% image_title = "#{t('views.photos.photo.added')} #{render partial: 'users/user', object: photo.user}" %>
-<%= link_to image_tag(photo.photo.thumb.url), photo.photo.url, data: {
-  toggle: 'lightbox', title: image_title, gallery: 'event-photos'
-} %>

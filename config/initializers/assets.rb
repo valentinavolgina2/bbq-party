@@ -11,4 +11,23 @@ Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
-Rails.application.config.assets.precompile += %w( lightbox/* )
+
+class AssetUrlProcessor
+  def self.call(input)
+    # don't know why, copy from other processor
+    context = input[:environment].context_class.new(input)
+    data = input[:data].gsub(/url\(["']?(.+?)["']?\)/i) do |match|
+      asset = $1
+      if asset && asset !~ /(data:|http)/i
+        path = context.asset_path(asset)
+        "url(#{path})"
+      else
+        match
+      end
+    end
+
+    { data: data }
+  end
+end
+
+Sprockets.register_postprocessor 'text/css', AssetUrlProcessor

@@ -42,5 +42,7 @@
       <%= bootstrap_flash %>
       <%= yield %>
     </div>
+
+    <%= javascript_include_tag "footer", "data-turbo-track": "reload", defer: true %>
   </body>
 </html>

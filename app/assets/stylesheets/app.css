@@ -28,3 +28,7 @@
 .field_with_errors {
   display: inline;
 }
+
+.bi-trash {
+  color: red;
+}
