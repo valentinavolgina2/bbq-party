@@ -21,13 +21,13 @@
                             edit_event_path(@event),
                             method: :get,
                             form_class: 'd-inline',
-                            class: 'btn btn-primary' %>
+                            class: 'btn btn-secondary' %>
               <%= button_to t('views.events.destroy.action'),
                             event_path(@event),
                             form: {data: {turbo_confirm: t('views.events.destroy.confirmation')}},
                             method: :delete,
                             form_class: 'd-inline',
-                            class: 'btn btn-danger' %>
+                            class: 'btn btn-warning' %>
             </div>
           <% end %>
         </div>

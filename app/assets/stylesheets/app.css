@@ -32,3 +32,44 @@
 .bi-trash {
   color: red;
 }
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #3b98fb;
+  border-color: #3b98fb;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #1787fd;
+  border-color: #1787fd;
+}
+
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #d4bf0b;
+  border-color: #d4bf0b;
+  box-shadow: none !important;
+}
+
+.btn-secondary:hover {
+  background-color: #a29102;
+  border-color: #a29102;
+}
+
+.btn-warning,
+.btn-warning:active,
+.btn-warning:focus {
+  background-color: #61574a;
+  border-color: #61574a;
+  color: white;
+  box-shadow: none !important;
+}
+
+.btn-warning:hover {
+  color: white;
+  background-color: #443726;
+  border-color: #443726;
+}
