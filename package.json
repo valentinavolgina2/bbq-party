@@ -10,6 +10,7 @@
     "bootstrap-icons": "^1.8.1",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3",
+    "masonry-layout": "^4.2.2",
     "sass": "^1.51.0",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
