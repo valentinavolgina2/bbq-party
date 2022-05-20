@@ -118,7 +118,7 @@ en:
         submit_text: Subscribe
     photos:
       photo:
-        upload: Upload
+        upload: Add photo
         added: Added by
         destroy_confirm: Are you sure you wanna delete this photo?
     event_mailer:

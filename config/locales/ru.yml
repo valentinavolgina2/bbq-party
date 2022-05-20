@@ -88,7 +88,7 @@ ru:
         submit_text: Подписаться
     photos:
       photo:
-        upload: Загрузить
+        upload: Добавить фото
         added: Добавил
         destroy_confirm: Вы уверены, что хотите удалить эту фотографию?
     event_mailer:
