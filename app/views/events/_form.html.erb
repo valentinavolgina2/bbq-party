@@ -13,7 +13,11 @@
 
   <div class="field mb-3">
     <%= f.label :datetime, class: 'fw-bold' %>
-    <p><%= f.datetime_select :datetime, class: 'form-control' %></p>
+    <p><%= f.text_field :datetime,
+                        value: @event.datetime,
+                        id: 'event-date',
+                        class: 'form-control',
+                        data: { datetime: @event.datetime.to_s } %></p>
   </div>
 
   <div class="field mb-3">
